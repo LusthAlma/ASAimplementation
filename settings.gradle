@@ -1,0 +1,4 @@
+rootProject.name = 'AsaImplementation'
+include 'M2'
+include 'M1'
+

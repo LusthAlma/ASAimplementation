@@ -1,5 +1,20 @@
+# Intellij
+.idea
+*.iml
+
+#Graddle
+.gradle
+**/build/
+
+# Maven target
+*/target
 # Compiled class file
 *.class
+*.classpath
+
+*.project
+*.settings
+**/bin/
 
 # Log file
 *.log
@@ -11,7 +26,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
