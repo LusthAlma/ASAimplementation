@@ -1,4 +1,6 @@
 package Interface.Components;
 
-public interface PortsComponents {
+import Interface.Ports.Ports;
+
+public interface PortsComponents extends Ports {
 }

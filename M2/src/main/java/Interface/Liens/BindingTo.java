@@ -1,12 +1,13 @@
 package Interface.Liens;
 
+import Configuration.ToPortConfig;
 import Interface.Components.ToPort;
 
 public class BindingTo implements Binding {
     private ToPort toPortComponents;
-    private Configuration.ToPort toPortConfiguration;
+    private ToPortConfig toPortConfiguration;
 
-    public BindingTo(ToPort toPortComponents, Configuration.ToPort toPortConfiguration) {
+    public BindingTo(ToPort toPortComponents, ToPortConfig toPortConfiguration) {
         this.toPortComponents = toPortComponents;
         this.toPortConfiguration = toPortConfiguration;
     }
@@ -15,11 +16,11 @@ public class BindingTo implements Binding {
         return toPortComponents;
     }
 
-    public Configuration.ToPort getToPortConfiguration() {
+    public ToPortConfig getToPortConfiguration() {
         return toPortConfiguration;
     }
 
-    public void setToPortConfiguration(Configuration.ToPort toPortConfiguration) {
+    public void setToPortConfiguration(ToPortConfig toPortConfiguration) {
         this.toPortConfiguration = toPortConfiguration;
     }
 

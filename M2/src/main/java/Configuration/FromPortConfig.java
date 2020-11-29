@@ -1,9 +1,9 @@
-package Interface.Components;
+package Configuration;
 
-public class FromPort implements PortsComponents {
+public class FromPortConfig implements PortsConfiguration {
     private String portName;
 
-    public FromPort(String portName) {
+    public FromPortConfig(String portName) {
         this.portName = portName;
     }
 

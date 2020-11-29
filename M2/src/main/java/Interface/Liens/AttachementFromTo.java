@@ -7,7 +7,7 @@ public class AttachementFromTo implements Attachement {
     private FromRole fromRole;
     private ToPort toPort;
 
-    public AttachementFromTo(FromRole fromRole, ToPort toPort) {
+    public AttachementFromTo(ToPort toPort, FromRole fromRole) {
         this.fromRole = fromRole;
         this.toPort = toPort;
     }

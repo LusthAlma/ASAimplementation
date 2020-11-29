@@ -1,17 +1,17 @@
 package Interface.Components;
 
 public class ToPort implements PortsComponents {
-    private int PortNum;
+    private String portName;
 
-    public ToPort(int portNum) {
-        PortNum = portNum;
+    public ToPort(String portName) {
+        this.portName = portName;
     }
 
-    public int getPortNum() {
-        return PortNum;
+    public String getPortNum() {
+        return portName;
     }
 
-    public void setPortNum(int portNum) {
-        PortNum = portNum;
+    public void setPortName(String portName) {
+        this.portName = portName;
     }
 }
