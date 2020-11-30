@@ -75,28 +75,28 @@ public class M0 {
         RPC rpcConnectionManagerDatabase = new RPC();
 
         FromRole caller2 = new FromRole("Caller");
-        rpcConnector.getGlue().getFromInterface().getRolesList().add(caller2);
+        rpcConnectionManagerDatabase.getGlue().getFromInterface().getRolesList().add(caller2);
 
         ToRole called2 = new ToRole("Called");
-        rpcConnector.getGlue().getToInterface().getRolesList().add(called2);
+        rpcConnectionManagerDatabase.getGlue().getToInterface().getRolesList().add(called2);
 
 
         RPC rpcConnectionManagerSecurityManager = new RPC();
 
         FromRole caller3 = new FromRole("Caller");
-        rpcConnector.getGlue().getFromInterface().getRolesList().add(caller3);
+        rpcConnectionManagerSecurityManager.getGlue().getFromInterface().getRolesList().add(caller3);
 
         ToRole called3 = new ToRole("Called");
-        rpcConnector.getGlue().getToInterface().getRolesList().add(called3);
+        rpcConnectionManagerSecurityManager.getGlue().getToInterface().getRolesList().add(called3);
 
 
         RPC rpcSecurityManagerDatabase = new RPC();
 
         FromRole caller4 = new FromRole("Caller");
-        rpcConnector.getGlue().getFromInterface().getRolesList().add(caller4);
+        rpcSecurityManagerDatabase.getGlue().getFromInterface().getRolesList().add(caller4);
 
         ToRole called4 = new ToRole("Called");
-        rpcConnector.getGlue().getToInterface().getRolesList().add(called4);
+        rpcSecurityManagerDatabase.getGlue().getToInterface().getRolesList().add(called4);
 
 
         myServer.getConfig().getComponentsList().add(myConnectionManager);
